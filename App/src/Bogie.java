@@ -1,22 +1,30 @@
-class Bogie {
-    private String type;
-    private int capacity;
 
-    public Bogie(String type, int capacity) {
-        this.type = type;
+public class Bogie {
+
+    private String name;
+    private int capacity;
+    private double weight;
+
+    public Bogie(String name, int capacity, double weight) {
+        this.name = name;
         this.capacity = capacity;
+        this.weight = weight;
     }
 
-    public String getType() {
-        return type;
+    public String getName() {
+        return name;
     }
 
     public int getCapacity() {
         return capacity;
     }
 
+    public double getWeight() {
+        return weight;
+    }
+
     @Override
     public String toString() {
-        return type + " -> " + capacity;
+        return name + " (Weight: " + weight + " tons)";
     }
 }
