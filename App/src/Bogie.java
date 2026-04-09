@@ -1,4 +1,3 @@
-
 public class Bogie {
 
     private String name;
@@ -25,6 +24,6 @@ public class Bogie {
 
     @Override
     public String toString() {
-        return name + " (Weight: " + weight + " tons)";
+        return name + " -> " + weight + " tons";
     }
 }
